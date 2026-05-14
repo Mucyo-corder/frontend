@@ -12,9 +12,9 @@ const NotFound = () => {
 
   return (
     <div className="relative flex h-full min-h-0 items-center justify-center overflow-y-auto bg-muted/35 p-4">
-      <Card className="w-full max-w-md border p-10 text-center shadow-sm">
+      <Card className="w-full max-w-md border p-6 text-center shadow-sm sm:p-10">
         <p className="text-sm font-medium uppercase tracking-wide text-muted-foreground">Error 404</p>
-        <h1 className="mt-2 text-4xl font-semibold tracking-tight text-foreground">Page not found</h1>
+        <h1 className="mt-2 text-2xl font-semibold tracking-tight text-foreground sm:text-4xl">Page not found</h1>
         <p className="mt-3 text-sm text-muted-foreground">The URL you opened does not match a route in this app.</p>
         <Button asChild className="mt-8 w-full">
           <Link to="/">Return to dashboard</Link>

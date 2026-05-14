@@ -70,11 +70,16 @@
 }
 
 @layer base {
-  html,
+  html {
+    height: 100%;
+    overflow-x: hidden;
+  }
   body {
     height: 100%;
+    min-height: 100dvh;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   #root {
     height: 100%;
@@ -105,7 +110,7 @@
 
   /* Luxury glass panels (cosmic / fintech shell) */
   .luxury-glass-panel {
-    @apply rounded-2xl p-6 shadow-none transition-[box-shadow,border-color,transform] duration-500 ease-out;
+    @apply rounded-2xl p-4 shadow-none transition-[box-shadow,border-color,transform] duration-500 ease-out sm:p-6;
     @apply border border-slate-200/75 bg-white/55 text-slate-900 backdrop-blur-2xl;
     box-shadow:
       0 0 0 1px rgba(255, 255, 255, 0.55) inset,

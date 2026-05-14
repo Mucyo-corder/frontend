@@ -63,16 +63,20 @@ export default function PublicView() {
               <p className="text-xs text-muted-foreground">Read-only sensor feed</p>
             </div>
           </div>
-          <div className="flex shrink-0 items-center gap-3">
-            <p className="text-xs text-muted-foreground sm:text-sm">
-              {deviceParam ? <span className="font-mono">{deviceParam}</span> : "All devices"}
+          <div className="flex min-w-0 max-w-[42%] flex-col items-end gap-0.5 sm:max-w-none">
+            <p className="w-full text-end text-xs text-muted-foreground sm:text-sm">
+              {deviceParam ? (
+                <span className="break-all font-mono">{deviceParam}</span>
+              ) : (
+                "All devices"
+              )}
             </p>
           </div>
         </div>
       </header>
 
       <main className="container max-w-3xl space-y-6 px-4 py-8 sm:px-6">
-        <Card className="p-6 shadow-sm">
+        <Card className="p-4 shadow-sm sm:p-6">
           <div className="mb-6 flex items-start gap-3">
             <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border bg-muted/60 text-primary">
               <Activity className="h-4 w-4" />

@@ -97,10 +97,10 @@ export default function AuditLog() {
       }
     >
       <div className="mx-auto flex min-h-0 w-full max-w-7xl flex-1 flex-col">
-        <div className="min-h-0 flex-1 space-y-6 overflow-y-auto pb-2">
+        <div className="min-h-0 flex-1 space-y-6 pb-2">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <h1 className="text-2xl font-semibold tracking-tight text-foreground">System audit trail</h1>
+          <h1 className="text-xl font-semibold tracking-tight text-foreground sm:text-2xl">System audit trail</h1>
             <p className="mt-1 text-sm text-muted-foreground">Review authenticated actions across the system</p>
           </div>
           <Button onClick={handleRefresh} variant="outline" size="sm" className="w-fit">
@@ -111,7 +111,7 @@ export default function AuditLog() {
 
         <Card className="p-6 shadow-sm">
           <div className="flex flex-wrap gap-4">
-            <div className="min-w-[200px] flex-1">
+            <div className="min-w-0 w-full flex-1 basis-full sm:min-w-[200px] sm:basis-0">
               <label className="mb-2 block text-sm font-medium text-foreground">Filter by action</label>
               <Select value={filterAction} onValueChange={setFilterAction}>
                 <SelectTrigger>
@@ -127,7 +127,7 @@ export default function AuditLog() {
                 </SelectContent>
               </Select>
             </div>
-            <div className="min-w-[200px] flex-1">
+            <div className="min-w-0 w-full flex-1 basis-full sm:min-w-[200px] sm:basis-0">
               <label className="mb-2 block text-sm font-medium text-foreground">Filter by entity</label>
               <Select value={filterEntity} onValueChange={setFilterEntity}>
                 <SelectTrigger>
@@ -144,7 +144,7 @@ export default function AuditLog() {
           </div>
         </Card>
 
-        <Card className="overflow-hidden shadow-sm">
+        <Card className="overflow-hidden p-4 shadow-sm sm:p-6">
           {loading ? (
             <div className="p-8 text-center text-sm text-muted-foreground">Loading audit logs…</div>
           ) : logs.length === 0 ? (

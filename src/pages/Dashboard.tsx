@@ -638,7 +638,7 @@ export default function Dashboard() {
       }
     >
       <div className="mx-auto flex min-h-0 w-full max-w-7xl flex-1 flex-col">
-        <div className="min-h-0 flex-1 space-y-6 overflow-y-auto pb-2">
+        <div className="min-h-0 flex-1 space-y-6 pb-2">
           {section === "home" && (
             <>
         <div>

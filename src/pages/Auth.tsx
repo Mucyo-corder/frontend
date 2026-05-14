@@ -89,7 +89,7 @@ export default function Auth() {
           <img src="/logo.svg" alt="SoberWatch - IoT Alcohol Monitoring System" className="h-12 w-auto" />
         </Link>
 
-        <Card className="p-8 shadow-elevated border-border/60">
+        <Card className="border-border/60 p-6 shadow-elevated sm:p-8">
           <div className="flex gap-2 mb-6">
             <Button
               variant={!useQrCode ? "default" : "outline"}

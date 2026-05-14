@@ -115,13 +115,13 @@ export default function Setup() {
         </div>
 
         <div>
-          <h1 className="text-3xl font-semibold tracking-tight text-foreground">ESP32 setup</h1>
+          <h1 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">ESP32 setup</h1>
           <p className="mt-2 max-w-2xl text-muted-foreground">
             Flash your ESP32 with the sketch below. Each reading is POSTed directly to your backend API endpoint.
           </p>
         </div>
 
-        <Card className="p-6 shadow-sm">
+        <Card className="p-4 shadow-sm sm:p-6">
           <h2 className="mb-3 text-base font-semibold text-foreground">1. Hardware</h2>
           <ul className="text-sm text-muted-foreground space-y-1.5 list-disc pl-5">
             <li>ESP32 dev board (any variant with Wi-Fi)</li>
@@ -130,7 +130,7 @@ export default function Setup() {
           </ul>
         </Card>
 
-        <Card className="p-6 shadow-sm">
+        <Card className="p-4 shadow-sm sm:p-6">
           <h2 className="mb-3 text-base font-semibold text-foreground">2. Arduino libraries</h2>
           <p className="text-sm text-muted-foreground">
             Install via Library Manager: <strong>WiFi</strong>, <strong>HTTPClient</strong>,{" "}
@@ -138,7 +138,7 @@ export default function Setup() {
           </p>
         </Card>
 
-        <Card className="p-6 shadow-sm">
+        <Card className="p-4 shadow-sm sm:p-6">
           <div className="mb-3 flex items-center justify-between gap-3">
             <h2 className="text-base font-semibold text-foreground">3. Sketch</h2>
             <Button
@@ -160,7 +160,7 @@ export default function Setup() {
           </pre>
         </Card>
 
-        <Card className="p-6 shadow-sm">
+        <Card className="p-4 shadow-sm sm:p-6">
           <h2 className="mb-3 text-base font-semibold text-foreground">4. Granting dashboard access</h2>
           <p className="text-sm text-muted-foreground">
             Users with <code className="font-mono text-foreground">role = 'admin'</code>{" "}
@@ -169,7 +169,7 @@ export default function Setup() {
           </p>
         </Card>
 
-        <Card className="p-6 shadow-sm">
+        <Card className="p-4 shadow-sm sm:p-6">
           <h2 className="mb-3 text-base font-semibold text-foreground">5. Data classification</h2>
           <ul className="text-sm space-y-1.5">
             <li><span className="inline-block w-2 h-2 rounded-full bg-status-safe mr-2 align-middle" /> SAFE: 0.00 – 0.03</li>
